@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<CurrentWeather>, t: Throwable) {
-                    Toast.makeText(applicationContext, "Нет доступа к данным", Toast.LENGTH_LONG).show()
+                    Toast.makeText(applicationContext, getString(R.string.nodata), Toast.LENGTH_LONG).show()
                 }
             })
     }
